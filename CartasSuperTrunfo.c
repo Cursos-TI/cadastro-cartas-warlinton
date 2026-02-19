@@ -33,7 +33,7 @@ printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional1);
 printf("PIB per Capita: %.2f reais\n", PIB_per_Capita1);
 printf("Super Poder: %.2f\n", super_poder);
 printf(" \n");
-
+//estou usando o printf(" /n"); para pular uma linha e deixar a exibição mais organizada.
 // dados da carta 2
 
 char titulo[20] = "Carta 2";
@@ -69,22 +69,26 @@ printf("PIB per Capita: %.2f reais\n", PIB_per_Capita2);
 printf("Super Poder: %.2f\n", Super_poder);
 printf(" \n");
 
+
 /*Comparação entre as carta 1 e carta 2    
 para determinar qual e a carta que esta vencendo entre as conparações */
 
 printf("Comparação entre as cidades:\n");
 printf(" \n");
-printf("População = %s\n", (População > população) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("Àrea = %s\n", (Àrea > area) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("PIB = %s\n", (PIB > Pib) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("Pontos Turísticos = %s\n", (Pontos_Turísticos > pontos_Turisticos) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("PIB per Capita = %s\n", (PIB_per_Capita1 > PIB_per_Capita2) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("Densidade Populacional = %s\n", (Densidade_Populacional1 < Densidade_Populacional2) ? "Carta 1 venceu" : "Carta 2 venceu");
-printf("Super Poder = %s\n", (super_poder > Super_poder) ? "Carta 1 venceu" : "Carta 2 venceu");
+printf("População = %s\n", (População > população) ? "Carta 1 tem mais população" : "Carta 2 tem mais população");
+printf("Àrea = %s\n", (Àrea > area) ? "Carta 1 tem maior área" : "Carta 2 tem maior área");
+printf("PIB = %s\n", (PIB > Pib) ? "Carta 1 tem maior PIB" : "Carta 2 tem maior PIB");
+printf("Pontos Turísticos = %s\n", (Pontos_Turísticos > pontos_Turisticos) ? "Carta 1 tem mais pontos turísticos" : "Carta 2 tem mais pontos turísticos");
+printf("PIB per Capita = %s\n", (PIB_per_Capita1 > PIB_per_Capita2) ? "Carta 1 tem maior PIB per Capita" : "Carta 2 tem maior PIB per Capita");
+printf("Densidade Populacional = %s\n", (Densidade_Populacional1 < Densidade_Populacional2) ? "Carta 1 tem menor densidade populacional" : "Carta 2 tem menor densidade populacional");
+printf("Super Poder = %s\n", (super_poder > Super_poder) ? "Carta 1 tem maior super poder" : "Carta 2 tem maior super poder");
 printf(" \n");
 
 /* comparação entre as carta 1 e carta 2 usando if else
 para determinar qual e a carta que esta vencendo entre as conparações */
+
+printf("comparação dos atributos:\n");
+printf(" \n");
 
 if (População > população)
 {
@@ -93,14 +97,12 @@ if (População > população)
     printf("Carta 2 venceu na categoria População\n");
 }
 
-
 if (Àrea > area)
 {
     printf("Carta 1 venceu na categoria Área\n");
 } else { 
     printf("Carta 2 venceu na categoria Área\n");
 }
-
 
 if (PIB > Pib)
 {
@@ -109,7 +111,6 @@ if (PIB > Pib)
     printf("Carta 2 venceu na categoria PIB\n");
 }
 
-
 if (Pontos_Turísticos > pontos_Turisticos)
 {
     printf("Carta 1 venceu na categoria Pontos Turísticos\n");
@@ -117,7 +118,6 @@ if (Pontos_Turísticos > pontos_Turisticos)
     printf("Carta 2 venceu na categoria Pontos Turísticos\n");
 }
 
-  
 if (Densidade_Populacional1 < Densidade_Populacional2)
 {
     printf("Carta 1 venceu na categoria Densidade Populacional\n");
@@ -125,14 +125,13 @@ if (Densidade_Populacional1 < Densidade_Populacional2)
     printf("Carta 2 venceu na categoria Densidade Populacional\n");
 }
 
-
 if (PIB_per_Capita1 > PIB_per_Capita2)
 {
     printf("Carta 1 venceu na categoria PIB per Capita\n");
 } else { 
     printf("Carta 2 venceu na categoria PIB per Capita\n");
-}
 
+}
 
 if (super_poder > Super_poder)
 {
@@ -141,6 +140,7 @@ if (super_poder > Super_poder)
     printf("Carta 2 venceu na categoria Super Poder\n");
 }
 
+printf(" \n");
 
 
 return 0; 
