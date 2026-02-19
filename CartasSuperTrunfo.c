@@ -1,148 +1,220 @@
 #include <stdio.h>
-int main (){
 
-// Exibindo os dados da carta 1
+int main() {
 
-char nome[20] = "Carta 1";
-char Estado = 'A';
-char Código[5] =  "A01";
-char Nome_da_Cidade[20]  ="São Paulo";
-int População = 12325000;
-float Àrea = 1521.11;
-float PIB = 699.28;
-int Pontos_Turísticos = 50;
+    // Carta 1
+    char nome[20] = "Carta 1";
+    char estado = 'A';
+    char codigo[5] = "A01";
+    char nome_da_cidade[20] = "Sao Paulo";
+    int populacao = 12325000;
+    float area = 1521.11;
+    float pib = 699.28;
+    int pontos_turisticos = 50;
 
-// dados da carta 1 em numeros sem abreviação para faz os calculos
+    // Valores para cálculo - Carta 1
+    double populacao1 = 12325000;
+    double area1 = 1521.11;
+    double PIB1 = 69928000000000;
 
-float populacao1 = 12325000;
-float area1 = 1521.11;
-float PIB1 = 699280000000.00;
-float Densidade_Populacional1 = populacao1 / area1; 
-float PIB_per_Capita1 = PIB1 / populacao1;
-float super_poder = populacao1 + area1 + PIB1 - Densidade_Populacional1 + PIB_per_Capita1;  
+    double densidade1 = populacao1 / area1;
+    double pib_per_capita1 = PIB1 / populacao1;
+    double super_poder1 = populacao1 + area1 + PIB1 - densidade1 + pib_per_capita1;
 
-printf("Titulo: %s\n", nome);
-printf("Estado: %c\n", Estado);
-printf("Código: %s\n", Código);
-printf("Nome da Cidade: %s\n", Nome_da_Cidade);
-printf("População: %d\n", População);
-printf("Àrea: %.2f km²\n", Àrea);
-printf("PIB: %.2f Bilhões de reais\n", PIB);
-printf("Número de Pontos Turísticos: %d\n", Pontos_Turísticos);
-printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional1);
-printf("PIB per Capita: %.2f reais\n", PIB_per_Capita1);
-printf("Super Poder: %.2f\n", super_poder);
-printf(" \n");
-//estou usando o printf(" /n"); para pular uma linha e deixar a exibição mais organizada.
-// dados da carta 2
+    //colocoquei um titulo para fica mais divertido
+    printf("=====================================\n");
+    printf("      JOGO DE CARTAS SUPER TRUNFO    \n");
+    printf("=====================================\n\n");
 
-char titulo[20] = "Carta 2";
-char estado = 'B';
-char código[5] = "B02";
-char nome_da_Cidade[20] ="Rio de Janeiro";
-int população = 6748000;
-float area = 1200.25;
-float Pib = 300.50;
-int pontos_Turisticos = 30;
+    // Exibindo Carta 1
+    printf("Titulo: %s\n", nome);
+    printf("Estado: %c\n", estado);
+    printf("Codigo: %s\n", codigo);
+    printf("Nome da Cidade: %s\n", nome_da_cidade);
+    printf("Populacao: %d\n", populacao);
+    printf("Area: %.2f km²\n", area);
+    printf("PIB: %.2f Bilhoes de reais\n", pib);
+    printf("Numero de Pontos Turisticos: %d\n", pontos_turisticos);
+    printf("Densidade Populacional: %.2lf hab/km²\n", densidade1);
+    printf("PIB per Capita: %.2lf reais\n", pib_per_capita1);
+    printf("Super Poder: %.2lf\n\n", super_poder1);
 
-// dados da carta 2 em numeros sem abreviação para faz os calculos
+    // Carta 2
+    char nome2[20] = "Carta 2";
+    char estado2 = 'B';
+    char codigo2[5] = "B02";
+    char nome_da_cidade2[20] = "Rio de Janeiro";
+    int populacao2_int = 6748000;
+    float area2_float = 1200.25;
+    float pib2_float = 300.50;
+    int pontos_turisticos2 = 30;
 
-float populacao2 = 6748000;
-float area2 = 1200.25;
-float PIB2 = 300500000000.00;
-float Densidade_Populacional2 = populacao2 / area2; 
-float PIB_per_Capita2 = PIB2/ populacao2;
-float Super_poder = populacao2 + area2 + PIB2 + pontos_Turisticos - Densidade_Populacional2 + PIB_per_Capita2;
+    // Valores para cálculo - Carta 2
+    double populacao2 = 6748000;
+    double area2 = 1200.25;
+    double PIB2 = 30050000000000;
 
-// Exibindo os dados da carta 2
+    double densidade2 = populacao2 / area2;
+    double pib_per_capita2 = PIB2 / populacao2;
+    double super_poder2 = populacao2 + area2 + PIB2 - densidade2 + pib_per_capita2;
 
-printf("Titulo: %s\n", titulo);
-printf("Estado: %c\n", estado);
-printf("Código: %s\n", código);
-printf("Nome da Cidade: %s\n", nome_da_Cidade);
-printf("População: %d\n", população);
-printf("Àrea: %.2f km²\n", area);
-printf("PIB: %.2f Bilhões de reais\n", Pib);
-printf("Número de Pontos Turísticos:  %d\n", pontos_Turisticos);
-printf("Densidade Populacional: %.2f hab/km²\n", Densidade_Populacional2);
-printf("PIB per Capita: %.2f reais\n", PIB_per_Capita2);
-printf("Super Poder: %.2f\n", Super_poder);
-printf(" \n");
+    // Exibindo Carta 2
+    printf("Titulo: %s\n", nome2);
+    printf("Estado: %c\n", estado2);
+    printf("Codigo: %s\n", codigo2);
+    printf("Nome da Cidade: %s\n", nome_da_cidade2);
+    printf("Populacao: %d\n", populacao2_int);
+    printf("Area: %.2f km²\n", area2_float);
+    printf("PIB: %.2f Bilhoes de reais\n", pib2_float);
+    printf("Numero de Pontos Turisticos: %d\n", pontos_turisticos2);
+    printf("Densidade Populacional: %.2lf hab/km²\n", densidade2);
+    printf("PIB per Capita: %.2lf reais\n", pib_per_capita2);
+    printf("Super Poder: %.2lf\n\n", super_poder2);
 
+    // Comparações
+    printf("Comparacao entre as cidades:\n\n");
 
-/*Comparação entre as carta 1 e carta 2    
-para determinar qual e a carta que esta vencendo entre as conparações */
+    printf("Populacao: %s\n", (populacao > populacao2_int) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("Area: %s\n", (area > area2_float) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("PIB: %s\n", (pib > pib2_float) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("Pontos Turisticos: %s\n", (pontos_turisticos > pontos_turisticos2) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("Densidade Populacional: %s\n", (densidade1 < densidade2) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("PIB per Capita: %s\n", (pib_per_capita1 > pib_per_capita2) ? "Carta 1 venceu" : "Carta 2 venceu");
+    printf("Super Poder: %s\n\n", (super_poder1 > super_poder2) ? "Carta 1 venceu" : "Carta 2 venceu");
 
-printf("Comparação entre as cidades:\n");
-printf(" \n");
-printf("População = %s\n", (População > população) ? "Carta 1 tem mais população" : "Carta 2 tem mais população");
-printf("Àrea = %s\n", (Àrea > area) ? "Carta 1 tem maior área" : "Carta 2 tem maior área");
-printf("PIB = %s\n", (PIB > Pib) ? "Carta 1 tem maior PIB" : "Carta 2 tem maior PIB");
-printf("Pontos Turísticos = %s\n", (Pontos_Turísticos > pontos_Turisticos) ? "Carta 1 tem mais pontos turísticos" : "Carta 2 tem mais pontos turísticos");
-printf("PIB per Capita = %s\n", (PIB_per_Capita1 > PIB_per_Capita2) ? "Carta 1 tem maior PIB per Capita" : "Carta 2 tem maior PIB per Capita");
-printf("Densidade Populacional = %s\n", (Densidade_Populacional1 < Densidade_Populacional2) ? "Carta 1 tem menor densidade populacional" : "Carta 2 tem menor densidade populacional");
-printf("Super Poder = %s\n", (super_poder > Super_poder) ? "Carta 1 tem maior super poder" : "Carta 2 tem maior super poder");
-printf(" \n");
+/* comparação entre as carta 1 e carta 2 usando if else para determinar
+qual e a carta que esta vencendo entre as conparações */ 
 
-/* comparação entre as carta 1 e carta 2 usando if else
-para determinar qual e a carta que esta vencendo entre as conparações */
+    printf("Comparacao entre as cartas usando if else:\n\n");
 
-printf("comparação dos atributos:\n");
-printf(" \n");
+if (populacao > populacao2_int) { printf("Carta 1 venceu na categoria População\n"); 
+    } else { 
+        printf("Carta 2 venceu na categoria População\n"); 
+} 
 
-if (População > população)
-{
-    printf("Carta 1 venceu na categoria População\n");
-} else { 
-    printf("Carta 2 venceu na categoria População\n");
-}
+if (area > area2_float) { printf("Carta 1 venceu na categoria Área\n");
+    } else { 
+        printf("Carta 2 venceu na categoria Área\n"); 
+} 
+    
+if (pib > pib2_float) { printf("Carta 1 venceu na categoria PIB\n");
+     } else { 
+        printf("Carta 2 venceu na categoria PIB\n"); 
+    } 
+    
+if (pontos_turisticos > pontos_turisticos2) { printf("Carta 1 venceu na categoria Pontos Turísticos\n");
+    } else { 
+        printf("Carta 2 venceu na categoria Pontos Turísticos\n");
+ } 
 
-if (Àrea > area)
-{
-    printf("Carta 1 venceu na categoria Área\n");
-} else { 
-    printf("Carta 2 venceu na categoria Área\n");
-}
+ if (densidade1 < densidade2) { printf("Carta 1 venceu na categoria Densidade Populacional\n");
+     } else { 
+        printf("Carta 2 venceu na categoria Densidade Populacional\n");
+ } 
+ 
+ if (pib_per_capita1 > pib_per_capita2) { printf("Carta 1 venceu na categoria PIB per Capita\n");
+     } else { 
+        printf("Carta 2 venceu na categoria PIB per Capita\n");
+ } 
+ 
+ if (super_poder1 > super_poder2) { printf("Carta 1 venceu na categoria Super Poder\n\n");
+     } else { 
+        printf("Carta 2 venceu na categoria Super Poder\n\n"); }
 
-if (PIB > Pib)
-{
-    printf("Carta 1 venceu na categoria PIB\n");
-} else { 
-    printf("Carta 2 venceu na categoria PIB\n");
-}
+// usando switch para criar um menu de comparação entre as cartas
 
-if (Pontos_Turísticos > pontos_Turisticos)
-{
-    printf("Carta 1 venceu na categoria Pontos Turísticos\n");
-} else { 
-    printf("Carta 2 venceu na categoria Pontos Turísticos\n");
-}
+    int escolha;
+    printf("=====================================\n");
+    printf("        SUPER TRUNFO - CIDADES       \n");
+    printf("=====================================\n\n");
+    printf("Escolha a categoria para comparar:\n\n");
+    printf("1 - População\n");
+    printf("2 - Área\n");
+    printf("3 - PIB\n");
+    printf("4 - Pontos Turísticos\n");
+    printf("5 - Densidade Populacional\n");
+    printf("6 - PIB per Capita\n");
+    printf("7 - Super Poder\n\n");
+    printf("Opcao: ");
+    scanf("%d", &escolha);
 
-if (Densidade_Populacional1 < Densidade_Populacional2)
-{
-    printf("Carta 1 venceu na categoria Densidade Populacional\n");
-} else { 
-    printf("Carta 2 venceu na categoria Densidade Populacional\n");
-}
+    printf("\nResultado da comparacao:\n\n");
 
-if (PIB_per_Capita1 > PIB_per_Capita2)
-{
-    printf("Carta 1 venceu na categoria PIB per Capita\n");
-} else { 
-    printf("Carta 2 venceu na categoria PIB per Capita\n");
+    // switch de comparação
 
-}
+    switch (escolha) {
+        case 1:
 
-if (super_poder > Super_poder)
-{
-    printf("Carta 1 venceu na categoria Super Poder\n");
-} else { 
-    printf("Carta 2 venceu na categoria Super Poder\n");
-}
+            if (populacao > populacao2_int) {
+                printf("venceu na categoria População a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (populacao < populacao2_int) {
+                printf("venceu na categoria População a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria População\n\n");
+            }
+            break;
 
-printf(" \n");
+        case 2:
+               if (area > area2_float) {
+                printf("venceu na categoria Área a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (area < area2_float) {
+                printf("venceu na categoria Área a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria Área\n\n");
+            }
+            break;
 
+            case 3:
+               if (pib > pib2_float) {
+                printf("venceu na categoria PIB a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (pib < pib2_float) {
+                printf("venceu na categoria PIB a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria PIB\n\n");
+               
+            }
+            break;
 
-return 0; 
+            case 4:
+               if (pontos_turisticos > pontos_turisticos2) {
+                printf("venceu na categoria Pontos Turísticos a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (pontos_turisticos < pontos_turisticos2) {
+                printf("venceu na categoria Pontos Turísticos a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria Pontos Turísticos\n\n");
+            }
+            break;
 
+            case 5:
+               if (densidade1 < densidade2) {
+                printf("venceu na categoria Densidade Populacional a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (densidade1 > densidade2) {
+                printf("venceu na categoria Densidade Populacional a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria Densidade Populacional\n\n");
+            }
+            break;
+
+            case 6:
+               if (pib_per_capita1 > pib_per_capita2) {
+                printf("venceu na categoria PIB per Capita a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (pib_per_capita1 < pib_per_capita2) {
+                printf("venceu na categoria PIB per Capita a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria PIB per Capita\n\n");
+            }
+            break;
+
+            case 7:
+               if (super_poder1 > super_poder2) {
+                printf("venceu na categoria Super Poder a cidade:\n%s\n\n", nome_da_cidade);
+            } else if (super_poder1 < super_poder2) {
+                printf("venceu na categoria Super Poder a cidade:\n%s\n\n", nome_da_cidade2);
+            } else {
+                printf("Empate na categoria Super Poder\n\n");
+            }
+            break;
+    }
+    
+    return 0;
 }
