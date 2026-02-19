@@ -83,43 +83,44 @@ int main() {
     printf("Super Poder: %s\n\n", (super_poder1 > super_poder2) ? "Carta 1 venceu" : "Carta 2 venceu");
 
 /* comparação entre as carta 1 e carta 2 usando if else para determinar
-qual e a carta que esta vencendo entre as conparações */ 
+qual e a carta que esta vencendo entre as conparações */
 
     printf("Comparacao entre as cartas usando if else:\n\n");
 
-if (populacao > populacao2_int) { printf("Carta 1 venceu na categoria População\n"); 
-    } else { 
-        printf("Carta 2 venceu na categoria População\n"); 
-} 
+    if (populacao > populacao2_int) { printf("Carta 1 venceu na categoria População\n"); 
+        } else { 
+            printf("Carta 2 venceu na categoria População\n"); 
+        } 
 
-if (area > area2_float) { printf("Carta 1 venceu na categoria Área\n");
-    } else { 
-        printf("Carta 2 venceu na categoria Área\n"); 
-} 
+    if (area > area2_float) { printf("Carta 1 venceu na categoria Área\n");
+        } else { 
+            printf("Carta 2 venceu na categoria Área\n"); 
+        } 
     
-if (pib > pib2_float) { printf("Carta 1 venceu na categoria PIB\n");
-     } else { 
-        printf("Carta 2 venceu na categoria PIB\n"); 
-    } 
+    if (pib > pib2_float) { printf("Carta 1 venceu na categoria PIB\n");
+        } else { 
+            printf("Carta 2 venceu na categoria PIB\n"); 
+        } 
     
-if (pontos_turisticos > pontos_turisticos2) { printf("Carta 1 venceu na categoria Pontos Turísticos\n");
-    } else { 
-        printf("Carta 2 venceu na categoria Pontos Turísticos\n");
- } 
+    if (pontos_turisticos > pontos_turisticos2) { printf("Carta 1 venceu na categoria Pontos Turísticos\n");
+        } else { 
+            printf("Carta 2 venceu na categoria Pontos Turísticos\n");
+        } 
 
- if (densidade1 < densidade2) { printf("Carta 1 venceu na categoria Densidade Populacional\n");
-     } else { 
-        printf("Carta 2 venceu na categoria Densidade Populacional\n");
- } 
+    if (densidade1 < densidade2) { printf("Carta 1 venceu na categoria Densidade Populacional\n");
+        } else { 
+            printf("Carta 2 venceu na categoria Densidade Populacional\n");
+        } 
  
- if (pib_per_capita1 > pib_per_capita2) { printf("Carta 1 venceu na categoria PIB per Capita\n");
-     } else { 
-        printf("Carta 2 venceu na categoria PIB per Capita\n");
- } 
+     if (pib_per_capita1 > pib_per_capita2) { printf("Carta 1 venceu na categoria PIB per Capita\n");
+        } else { 
+            printf("Carta 2 venceu na categoria PIB per Capita\n");
+        } 
  
- if (super_poder1 > super_poder2) { printf("Carta 1 venceu na categoria Super Poder\n\n");
-     } else { 
-        printf("Carta 2 venceu na categoria Super Poder\n\n"); }
+    if (super_poder1 > super_poder2) { printf("Carta 1 venceu na categoria Super Poder\n\n");
+        } else { 
+            printf("Carta 2 venceu na categoria Super Poder\n\n");
+        }
 
 // usando switch para criar um menu de comparação entre as cartas
 
